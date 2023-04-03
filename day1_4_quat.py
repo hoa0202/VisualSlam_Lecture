@@ -20,3 +20,4 @@ r= R.from_quat([0, 0, np.sin(np.pi/4), np.sin(np.pi/4)])
 print(r.as_euler('xyz'))
 r = R.from_euler('z', 90, degrees=True)
 print(r.as_quat())
+#www.andre-gaschler.com/rotationconverter
