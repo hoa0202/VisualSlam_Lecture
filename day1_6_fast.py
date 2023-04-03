@@ -11,13 +11,17 @@ print(f"Threshold: {fast.getThreshold()}")
 print(f"NonMaxSuppression: {fast.getNonmaxSuppression()}")
 print(f"neighborhood: {fast.getType()}")
 print(f"# of keypoint with NMS: {len(kp)}")
+cv.imshow("test", img)
+
 fast.setNonmaxSuppression(0)
 kp = fast.detect(img, None)
-print(f"# of keypoint without NMS: {len(kp)}")
+cv.imshow("test2", img2)
+img3 = cv.drawKeypoints(img, kp, None, color =(0, 0, 255))
 
+print(f"# of keypoint without NMS: {len(kp)}")
 
 if img is None:
     print('Image load failed')
     sys.exit()
-cv.imshow("test", img2)
+cv.imshow("test3", img3)
 cv.waitKey()
