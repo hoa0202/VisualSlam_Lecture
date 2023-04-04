@@ -1,6 +1,7 @@
 # day2_2_hog.py
 import cv2, sys, random
-cap = cv2.VideoCapture('c:/VIsualSLAM/VisualSlam_Lecture/vtest.avi')
+#cap = cv2.VideoCapture('c:/VIsualSLAM/VisualSlam_Lecture/vtest.avi')
+cap = cv2.VideoCapture(0)
 if not cap.isOpened():
     print('Video open failed!')
     sys.exit()
