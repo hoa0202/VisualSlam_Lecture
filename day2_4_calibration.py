@@ -2,7 +2,7 @@
 
 import numpy as np, cv2 as cv, glob
 
-chessboardSize = (24,17)
+chessboardSize = (9,6)
 frameSize = (1440,1080)
 
 # termination criteria
@@ -18,7 +18,7 @@ objp = objp * size_of_chessboard_squares_mm
 objpoints = [] # 3d point in real world space
 imgpoints = [] # 2d points in image plane.
 
-images = glob.glob('c:/VIsualSLAM/VisualSlam_Lecture/calibration/*.png')
+images = glob.glob('c:/VIsualSLAM/VisualSlam_Lecture/calibration3/*.jpg')
 
 for image in images:
     img = cv.imread(image)
