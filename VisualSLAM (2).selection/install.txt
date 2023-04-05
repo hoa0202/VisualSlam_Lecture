@@ -1,0 +1,17 @@
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+
+재부팅
+
+wsl --set-default-version 2
+
+wsl --set-update
+
+시작메뉴 ubuntu 클릭
+
+
+gtsam설치
+https://github.com/borglab/gtsam/blob/develop/INSTALL.md
+
+https://gtsam.org/get_started/
